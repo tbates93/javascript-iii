@@ -113,8 +113,16 @@ var secrets = (obj) => {
 
 // Write a function called removePassword that takes in an object. Delete the property password and return the object.
 
-// CODE HERE
+var removePassword = (obj) => {
+  // for (var prop in obj){
+  //   if (prop === password){
+  //     delete obj.password;
+  //   }
+  // }
 
+  delete obj.password;
+  return obj;
+}
 
 
 // ========================
@@ -129,16 +137,26 @@ var deleteTheBigNumbers = {
   fourth: 200
 }
 
-// CODE HERE
-
-
+for (var prop in deleteTheBigNumbers){
+  if (deleteTheBigNumbers[prop] > 100){
+    delete deleteTheBigNumbers[prop];
+  }
+}
 // ========================
 
 
 // Write a function called startsWithK that takes an object as a parameter. Write a for in loop to loop over the object. If any property name starts with k, delete that property. Return the updated object.
 
-// CODE HERE
-
+var startsWithK = (obj) => {
+  for (var prop in obj){
+    if (prop.indexOf('k') === 0){
+      console.log(obj)
+      delete obj[prop];
+      console.log(obj)
+    }
+  }
+  return obj;
+}
 
 
 // ========================
