@@ -165,4 +165,11 @@ var startsWithK = (obj) => {
 // Write a function called hiddenTreasure that takes in an object. Write a for in loop that loops over this object. Each property will have a sentence as it's value. If the property value does not contain the word 'treasure', delete the property. Return the updated object.
 // (hint: the method includes() may be of use...)
 
-// CODE HERE
+var hiddenTreasure = (obj) => {
+  for (var prop in obj){
+    if (!obj[prop].includes('treasure')){
+      delete obj[prop];
+    }
+  }
+  return obj;
+}
