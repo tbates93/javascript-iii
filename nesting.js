@@ -98,9 +98,8 @@ var cat = {
 // 1. Assign the value of Grumpy's 2nd activity to the variable below.
 // 2. Assign fluffy2ndFriend the name of Fluffy's 2nd friend.
 
-// for (var prop in cat){
-//   if (prop === "")
-// }
+// cat.catFriends.activities[1] = grumpyActivity;
+// cat.catFriends.
 
 var grumpyActivity;
 var fluffy2ndFriend;
@@ -141,7 +140,9 @@ var myCar = {
 }
 
 // Code here
-
+var recordCleaner = () => {
+  
+}
 
 
 
