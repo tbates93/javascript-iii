@@ -1,11 +1,11 @@
 describe('Update Employee Info', function() {
     var returnedArr;
-    it('Theo Trill object should be removed', function() { 
+    it('Theo Trill object should be removed', function() {
         returnedArr = employeeUpdater();
         var flag = true;
         returnedArr.map(function(employee) {
             if (employee.firstName === 'Theo') flag = false;
-        }) 
+        })
       expect(flag).toEqual(true);
     })
 
@@ -38,7 +38,7 @@ describe('Update Employee Info', function() {
       })
   })
 
-  describe('Fluffy & friends', function() { 
+  describe('Fluffy & friends', function() {
 
     it('grumpyActivity value should be \'eat food\'', function() {
         expect(grumpyActivity).toEqual('eat food')
@@ -62,7 +62,7 @@ describe('Update Employee Info', function() {
               }
           })
             expect(flag).toEqual(true);
-      })  
+      })
   })
 
   describe('Looper', function() {

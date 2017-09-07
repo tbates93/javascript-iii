@@ -101,8 +101,8 @@ var cat = {
 // cat.catFriends.activities[1] = grumpyActivity;
 // cat.catFriends.
 
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
@@ -141,7 +141,8 @@ var myCar = {
 
 // Code here
 var recordCleaner = () => {
-  
+  myCar.accidents.map((i) => i.atFaultForAccident = false)
+  //console.log(myCar)
 }
 
 
@@ -161,3 +162,15 @@ var recordCleaner = () => {
 // 4. Return the modified numsArr.
 
 var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
+
+var looper = () => {
+
+  for (var i = 0; i < numsArr.length; i++){
+    for (var j = 0; j < numsArr[i].length; j++){
+      if (numsArr[i][j] % 2 === 0){
+        numsArr[i][j] = "even"
+      }
+      else numsArr[i][j] = "odd"
+    }
+  }
+}

@@ -161,9 +161,11 @@ class Machine {
   }
 
   reboot () {
-      return cb = () => {
-        this.wear_and_tear_count-=10;
+      return () => {
+
         this.needs_reboot = false;
+        this.wear_and_tear_count-=10;
+
       }
   }
 

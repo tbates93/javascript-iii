@@ -95,14 +95,16 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 {"owner":"Bob","price":133},{"owner":"Barry","price":109},{"owner":"Bob","price":115}]
 
 //var temp = 0;
+var temp = 0;
+var bobsTotal = purchases.filter((person) => {
 
-var bobsTotal = purchases.map((person) => {
- // var temp = [];
   if (person.owner === "Bob"){
-      bobsTotal += person.price;
+     temp = temp + person.price;
   }
-return bobsTotal;
 
+
+  console.log(temp)
+  return bobsTotal = temp;
 })
 
 
